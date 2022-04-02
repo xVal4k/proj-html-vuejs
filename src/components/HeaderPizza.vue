@@ -8,8 +8,8 @@
 <script>
 /* eslint-disable */
 
-import HeaderImageScroll from './micro_header/HeaderImageScroll.vue'
-import NavBar from "./micro_header/NavBar.vue"
+import HeaderImageScroll from './micro/HeaderImageScroll.vue'
+import NavBar from "./micro/NavBar.vue"
 
 export default {
   components: {
