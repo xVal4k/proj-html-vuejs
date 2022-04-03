@@ -40,6 +40,7 @@ export default {
   padding: 4rem 0;
   text-align: center;
   position: relative;
+  margin-bottom: .5rem;
   .sec2_cont {
     width: 40%;
     max-width: 800px;
@@ -47,7 +48,6 @@ export default {
     font-weight: bold;
     h1 {
       font-size: 8rem;
-      margin-left: -4rem;
       margin-bottom: -4rem;
       color: #b7903c;
     }
