@@ -117,8 +117,8 @@ export default {
   }
 
   button {
-    width: 60px;
-    height: 30px;
+    width: 50px;
+    height: 25px;
     font-size: 8px;
     font-weight: bold;
     border-top-left-radius: 50px;
@@ -131,13 +131,13 @@ export default {
   }
 
   .btn_prev {
-    left: -20px;
+    left: -12.5px;
     top: 50%;
     transform: rotate(90deg);
   }
 
   .btn_next {
-    right: -20px;
+    right: -12.5px;
     top: 50%;
     transform: rotate(-90deg);
   }
