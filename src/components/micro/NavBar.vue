@@ -21,7 +21,7 @@
 <script>
 /* eslint-disable */
 export default {
-  name: "HeaderPizza",
+  name: "NavBar",
   data() {
     return {
       navbarCenterLeft: ["HOME", "PAGES", "MENU"],
@@ -43,13 +43,13 @@ nav {
   padding: 1rem;
 
   button {
-  padding: .75rem 1.5rem;
-  font-size: 9px;
-  font-weight: bold;
-  background: #D2401E;
-  color: white;
-  border: solid 1px #D2401E;
-  cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    font-size: 10px;
+    background: #d2401e;
+    color: white;
+    border: solid 1px #d2401e;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
   }
 
   a {

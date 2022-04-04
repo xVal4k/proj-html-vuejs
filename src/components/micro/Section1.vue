@@ -1,9 +1,16 @@
 <template>
   <section id="sec_1">
-    <div v-for="(photo, index) in photos"
-    :key="index" class="img_cont">
-      <img :src="photo.src" :alt="photo.alt" />
-      <div class="hover_eye">ou</div>
+    <div
+      v-for="(photo, index) in photos"
+      :key="index"
+      class="img_cont"
+      @mouseover="setHover(index)"
+      @mouseout="imgHover = null"
+      @focus="setHover(index)"
+      @focusout="imgHover = null"
+    >
+      <img :src="photo.src" :alt="photo.alt" :class="imgHover == index ? 'display_none' : ''" />
+      <div class="hover_eye"><i class="far fa-eye"></i></div>
     </div>
   </section>
 </template>
@@ -42,10 +49,10 @@ export default {
     };
   },
   methods: {
-    imgHovered(index) {
+    setHover(index) {
       this.imgHover = index;
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -58,24 +65,34 @@ export default {
   .img_cont {
     position: relative;
     width: calc((100% - 1.5rem) / 4);
+    background-image: radial-gradient(lightgrey 10%, transparent 11%),
+    radial-gradient(#fff 10%, transparent 11%);
+    background-size: 10px 10px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
   }
   img {
     width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: relative;
   }
   .hover_eye {
-    padding: 1rem;
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    color: white;
     background: red;
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    z-index: 9;
+    z-index: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
   }
-}
-.display_i_b {
-  display: inline-block;
 }
 .display_none {
   display: none;
