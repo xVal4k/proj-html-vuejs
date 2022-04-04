@@ -2,6 +2,7 @@
   <div id="app">
     <header-pizza />
     <main-pizza />
+    <footer-pizza />
   </div>
 </template>
 
@@ -10,11 +11,14 @@
 
 import HeaderPizza from './components/HeaderPizza.vue'
 import MainPizza from './components/MainPizza.vue';
+import FooterPizza from './components/FooterPizza.vue';
+
 export default {
   name: 'App',
   components: {
     HeaderPizza,
     MainPizza,
+    FooterPizza,
   },
 };
 </script>
