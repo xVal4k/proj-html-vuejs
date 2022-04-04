@@ -7,6 +7,7 @@
     <section-5 />
     <section-6 />
     <section-7 />
+    <section-8 />
   </main>
 </template>
 
@@ -20,6 +21,7 @@ import Section4 from './micro/Section4.vue'
 import Section5 from './micro/Section5.vue'
 import Section6 from './micro/Section6.vue'
 import Section7 from './micro/Section7.vue'
+import Section8 from './micro/Section8.vue'
 export default {
   components: {
     Section1,
@@ -28,7 +30,8 @@ export default {
     Section4,
     Section5,
     Section6,
-    Section7
+    Section7,
+    Section8
   },
 
 }
