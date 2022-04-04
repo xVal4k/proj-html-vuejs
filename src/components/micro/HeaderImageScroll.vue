@@ -97,7 +97,6 @@ export default {
 .HdImgCont {
   padding: 0.5rem 0 3rem 0;
   text-align: center;
-  transition: all 1s ease;
   .pizza_slice {
     width: 15%;
     margin: 0 auto;

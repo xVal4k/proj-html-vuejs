@@ -1,9 +1,20 @@
 <template>
   <section id="sec_9">
-    <label for="input_people">
-      <input id="input_people" type="text" placeholder="1 Person" />
+    <div class="first_select_cont">
+      <select name="groupSize" class="group_size">
+        <option value="1">1 Person</option>
+        <option value="2">2 People</option>
+        <option value="3">3 People</option>
+        <option value="4">4 People</option>
+        <option value="5">5 People</option>
+        <option value="6">6 People</option>
+        <option value="7">7 People</option>
+        <option value="8">8 People</option>
+        <option value="9">9 People</option>
+        <option value="10">10 People</option>
+      </select>
       <p class="abs_text">* Powered by OpenTable</p>
-    </label>
+    </div>
     <div class="mid_input">FOR</div>
     <label for="input_date">
       <input id="input_date" type="date" placeholder="11/29/2020" />
@@ -26,7 +37,7 @@ export default {
 
 <style scoped lang="scss">
 #sec_9 {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   background-image: url(../../assets/images/img/h3-background-img-3.jpg);
   background-size: cover;
   background-position: center;
@@ -38,7 +49,8 @@ export default {
   label {
     position: relative;
   }
-  input {
+  input,
+  .group_size {
     margin: 0 1rem;
     padding: 0.75rem;
     width: 200px;
@@ -62,13 +74,16 @@ export default {
     background: tomato;
     border: solid 1px tomato;
   }
-  .abs_text {
-    position: absolute;
-    left: 15px;
-    bottom: -25px;
-    color: white;
-    font-size: 12px;
-    opacity: .7;
+  .first_select_cont {
+    position: relative;
+    .abs_text {
+      position: absolute;
+      left: 15px;
+      bottom: -25px;
+      color: white;
+      font-size: 12px;
+      opacity: 0.7;
+    }
   }
 }
 </style>
