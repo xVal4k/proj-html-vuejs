@@ -81,7 +81,7 @@ export default {
     color: #b7903c;
   }
   .sec2_cont {
-    width: 40%;
+    width: 50%;
     max-width: 800px;
     margin: 0 auto;
     font-weight: bold;

@@ -13,8 +13,10 @@
         <img :src="pizza.src" :alt="pizza.name" />
         <div class="pizza_infos">
           <p class="pizza_name">{{ pizza.name }}</p>
-          <span class="old_price">{{ pizza.oldPrice }}</span>
-          <span class="current_price">{{ pizza.currentPrice }}</span>
+          <div class="pizza_price">
+            <span class="old_price">{{ pizza.oldPrice }}</span>
+            <span class="current_price">{{ pizza.currentPrice }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -79,16 +81,17 @@ export default {
   text-align: center;
   padding: 5rem 0;
   position: relative;
+  letter-spacing: 1px;
   .intro {
-    width: 33%;
+    width: 30%;
     margin: 0 auto 5rem;
     p {
-      color: grey;
-      font-size: 12px;
-      font-weight: bold;
+      color: #8F8F8F;
+      font-size: 14px;
+      font-weight: 500;
     }
     .above_title {
-      color: tomato;
+      color: #d2401e;
       font-size: 10px;
       font-weight: bold;
     }
@@ -104,25 +107,44 @@ export default {
       flex-direction: column;
       width: 100%;
       margin: 0 3rem;
+      position: relative;
+      &:nth-child(3)::before {
+        content: 'SOLD';
+        position: absolute;
+        font-size: 10px;
+        background: #d2401e;
+        color: white;
+        padding: .75rem .5rem;
+        border-radius: 50%;
+        top: 10px;
+        right: 0;
+      }
       .pizza_infos {
         margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         .pizza_name {
           font-size: 14px;
-          font-weight: bold;
-          color: gold;
+          font-weight: 500;
+          color: #b68a2c;
           margin-bottom: .25rem;
         }
-        .old_price {
-          font-size: 14px;
-          font-weight: bold;
-          margin: .25rem .5rem;
-          color: grey;
-          text-decoration: line-through;
-        }
-        .current_price {
-          color: tomato;
-          font-size: 14px;
-          font-weight: bold;
+        .pizza_price {
+          display: flex;
+          justify-content: center;
+          .old_price {
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0 .5rem;
+            color: #8F8F8F;
+            text-decoration: line-through;
+          }
+          .current_price {
+            color: #d2401e;
+            font-size: 14px;
+            font-weight: 500;
+          }
         }
       }
     }
