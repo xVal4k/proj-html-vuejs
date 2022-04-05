@@ -49,6 +49,9 @@ export default {
   label {
     position: relative;
   }
+  select, input {
+    cursor: pointer;
+  }
   input,
   .group_size {
     margin: 0 1rem;

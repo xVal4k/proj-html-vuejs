@@ -70,6 +70,7 @@ export default {
     background-size: 10px 10px;
     background-position: 0 0, 30px 30px;
     background-repeat: repeat;
+    cursor: pointer;
   }
   img {
     width: 100%;

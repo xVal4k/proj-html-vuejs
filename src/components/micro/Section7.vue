@@ -114,7 +114,7 @@ export default {
         font-size: 10px;
         background: #d2401e;
         color: white;
-        padding: .75rem .5rem;
+        padding: 1.25rem 1rem;
         border-radius: 50%;
         top: 10px;
         right: 0;

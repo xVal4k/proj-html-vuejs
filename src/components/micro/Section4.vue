@@ -43,8 +43,11 @@ export default {
     top: 50%;
     left: 20%;
     color: white;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 4rem;
     transform: translateY(-50%);
+    letter-spacing: 1px;
+    font-weight: 500;
   }
   .row {
     display: flex;
