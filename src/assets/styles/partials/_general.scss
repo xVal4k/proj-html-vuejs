@@ -4,10 +4,21 @@ html {
 }
 
 header {
-  background: #181818;
+  background: url(https://donpeppe.qodeinteractive.com/wp-content/uploads/2019/10/h3-rev-bckgrnd-ing.jpg);
   position: relative;    
 }
 
 button {
   font-family: 'Oswald', sans-serif;
+}
+
+svg {
+  position: absolute;
+  right: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+  background: #F7F7F2;
+  padding: .5rem .65rem;
+  z-index: 99;
 }

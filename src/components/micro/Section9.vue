@@ -17,11 +17,11 @@
     </div>
     <div class="mid_input">FOR</div>
     <label for="input_date">
-      <input id="input_date" type="date" placeholder="11/29/2020" />
+      <input id="input_date" type="date"/>
     </label>
     <div class="mid_input">AT</div>
     <label for="input_hour">
-      <input id="input_hour" type="time" placeholder="7.00 pm" />
+      <input id="input_hour" type="time"/>
     </label>
     <button>BOOK A TABLE</button>
   </section>
@@ -71,8 +71,10 @@ export default {
     padding: 0 3rem;
     cursor: pointer;
     color: white;
-    background: tomato;
-    border: solid 1px tomato;
+    background: #d2401e;
+    border: solid 1px #d2401e;
+    font-size: 10px;
+    letter-spacing: 2px;
   }
   .first_select_cont {
     position: relative;

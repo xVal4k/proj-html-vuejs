@@ -41,6 +41,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  letter-spacing: 2px;
 
   button {
     padding: 0.75rem 1.5rem;
@@ -50,6 +51,7 @@ nav {
     border: solid 1px #d2401e;
     cursor: pointer;
     font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
   }
 
   a {

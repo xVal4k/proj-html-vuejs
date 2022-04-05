@@ -2,8 +2,7 @@
   <section id="sec_6">
     <div class="cont">
       <a href="#!">
-      <img v-for="logo in logos" :key="logo" :src="logo.src" :alt="logo.alt">
-
+        <img v-for="logo in logos" :key="logo" :src="logo.src" :alt="logo.alt" />
       </a>
     </div>
   </section>
@@ -19,40 +18,40 @@ import Vegan from "../../assets/images/img/h1-clients-img-5.png";
 
 export default {
   name: "Section6",
-  data () {
+  data() {
     return {
       logos: [
         {
           src: Cowboy,
-          alt: 'Cowboy logo'
+          alt: "Cowboy logo",
         },
         {
           src: Gordon,
-          alt: 'Gordon logo'
+          alt: "Gordon logo",
         },
         {
           src: BCheese,
-          alt: 'Big Chese logo'
+          alt: "Big Chese logo",
         },
         {
           src: Bludoos,
-          alt: 'Bludoos Bar logo'
+          alt: "Bludoos Bar logo",
         },
         {
           src: Vegan,
-          alt: 'Vegan logo'
+          alt: "Vegan logo",
         },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped lang="scss">
 #sec_6 {
-  background: grey;
+  background: #F7F7F2;
   padding: 4rem;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   .cont {
     width: 60%;
     max-width: 1400px;
